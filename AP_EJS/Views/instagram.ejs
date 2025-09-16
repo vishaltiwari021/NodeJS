@@ -1,0 +1,21 @@
+<%-include("Include/header.ejs")%>//we use this as replace the some code like header and footer etc...
+<body>
+    <h1>
+        Instagram User :@<%= data.name%> 
+    </h1>
+    <button>follow</button>
+    <button>message</button>
+<!-- how to use loops in ejs by doing this <%%> -->
+<p>Followers : <%=data.followers%></p>
+<p>Follow : <%=data.following%></p>
+<hr>
+
+<% for(let post of data.posts){ %>
+    <img src="<%= post.image %>" alt="not found"/>
+    <p>Likes : <%=post.likes%></p>
+    <p>Comments : <%=post.comments%></p>
+<%}%>
+
+</body>
+<%-include("Include/footer.ejs")%>
+</html>

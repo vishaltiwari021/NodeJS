@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RollDice </title>
+</head>
+<body>
+    <h1> Random value :
+        <%= diceValue %>
+    </h1>
+    <!-- how to to use conditional in ejs by doing this <%%> -->
+     <%if(diceValue == 6) {%>
+        <h3>Nice! Roll Dice Again.</h3>
+     <%}%>
+</body>
+</html>
