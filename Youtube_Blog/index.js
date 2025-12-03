@@ -26,4 +26,5 @@ app.use('/user',userRoute);
 app.listen(PORT,()=>{
     console.log(`app lististing on post no:${PORT}`);
     
-})
+});
+app.use('/',userRoute);
