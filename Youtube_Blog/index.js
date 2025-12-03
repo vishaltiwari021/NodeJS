@@ -13,25 +13,4 @@ app.get("/",(req,res)=>{
     res.render("homepage");
 });
 
-app.use('/user',userRoute);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-app.listen(PORT,()=>{
-    console.log(`app lististing on post no:${PORT}`);
-    
-})
+app.use('/',userRoute);
